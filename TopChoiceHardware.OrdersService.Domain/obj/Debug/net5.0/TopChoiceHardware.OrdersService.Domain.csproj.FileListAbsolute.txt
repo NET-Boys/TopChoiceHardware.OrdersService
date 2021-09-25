@@ -1,0 +1,12 @@
+C:\Users\Aaron\source\repos\TopChoiceHardware.Orders.Service\TopChoiceHardware.OrdersService.Domain\bin\Debug\net5.0\TopChoiceHardware.OrdersService.Domain.deps.json
+C:\Users\Aaron\source\repos\TopChoiceHardware.Orders.Service\TopChoiceHardware.OrdersService.Domain\bin\Debug\net5.0\TopChoiceHardware.OrdersService.Domain.dll
+C:\Users\Aaron\source\repos\TopChoiceHardware.Orders.Service\TopChoiceHardware.OrdersService.Domain\bin\Debug\net5.0\ref\TopChoiceHardware.OrdersService.Domain.dll
+C:\Users\Aaron\source\repos\TopChoiceHardware.Orders.Service\TopChoiceHardware.OrdersService.Domain\bin\Debug\net5.0\TopChoiceHardware.OrdersService.Domain.pdb
+C:\Users\Aaron\source\repos\TopChoiceHardware.Orders.Service\TopChoiceHardware.OrdersService.Domain\obj\Debug\net5.0\TopChoiceHardware.OrdersService.Domain.csproj.AssemblyReference.cache
+C:\Users\Aaron\source\repos\TopChoiceHardware.Orders.Service\TopChoiceHardware.OrdersService.Domain\obj\Debug\net5.0\TopChoiceHardware.OrdersService.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aaron\source\repos\TopChoiceHardware.Orders.Service\TopChoiceHardware.OrdersService.Domain\obj\Debug\net5.0\TopChoiceHardware.OrdersService.Domain.AssemblyInfoInputs.cache
+C:\Users\Aaron\source\repos\TopChoiceHardware.Orders.Service\TopChoiceHardware.OrdersService.Domain\obj\Debug\net5.0\TopChoiceHardware.OrdersService.Domain.AssemblyInfo.cs
+C:\Users\Aaron\source\repos\TopChoiceHardware.Orders.Service\TopChoiceHardware.OrdersService.Domain\obj\Debug\net5.0\TopChoiceHardware.OrdersService.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Aaron\source\repos\TopChoiceHardware.Orders.Service\TopChoiceHardware.OrdersService.Domain\obj\Debug\net5.0\TopChoiceHardware.OrdersService.Domain.dll
+C:\Users\Aaron\source\repos\TopChoiceHardware.Orders.Service\TopChoiceHardware.OrdersService.Domain\obj\Debug\net5.0\ref\TopChoiceHardware.OrdersService.Domain.dll
+C:\Users\Aaron\source\repos\TopChoiceHardware.Orders.Service\TopChoiceHardware.OrdersService.Domain\obj\Debug\net5.0\TopChoiceHardware.OrdersService.Domain.pdb
