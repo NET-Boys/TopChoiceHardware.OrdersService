@@ -14,9 +14,9 @@ namespace TopChoiceHardware.Orders.Service.Controllers
     [ApiController]
     public class MetodoPagoController : ControllerBase
     {
-        private readonly IOrdenesService _service;
+        private readonly IMetodoPagoService _service;
 
-        public MetodoPagoController(IOrdenesService service)
+        public MetodoPagoController(IMetodoPagoService service)
         {
             _service = service;
         }
@@ -35,5 +35,6 @@ namespace TopChoiceHardware.Orders.Service.Controllers
                 return BadRequest(e.Message);
             }
         }
+
     }
 }

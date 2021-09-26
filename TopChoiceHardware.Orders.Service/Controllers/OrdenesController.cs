@@ -33,8 +33,41 @@ namespace TopChoiceHardware.Orders.Service.Controllers
                     return BadRequest(e.Message);
                 }
             }
+        [HttpGet]
+        public IActionResult GetOrden()
+        {
+            try
+            {
+                var ordenes = _service.GetOrden();
 
+                return Ok(ordenes);
+            }
+            catch (Exception)
+            {
 
+                return StatusCode(500, "Internal server error");
+            }
         }
+        [HttpGet("{id}")]
+        public IActionResult GetOrdenById(int id)
+        {
+            try
+            {
+                var usuario = _service.GetOrdenById(id);
+                if (usuario == null)
+                {
+                    return NotFound();
+                }
+
+                return Ok(usuario);
+            }
+            catch (Exception)
+            {
+
+                return StatusCode(500, "Internal server error");
+            }
+        }
+
+    }
     
 }

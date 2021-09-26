@@ -14,9 +14,9 @@ namespace TopChoiceHardware.Orders.Service.Controllers
     [ApiController]
     public class FacturaController : ControllerBase
     {
-        private readonly IOrdenesService _service;
+        private readonly IFacturaService _service;
 
-        public FacturaController(IOrdenesService service)
+        public FacturaController(IFacturaService service)
         {
             _service = service;
         }
@@ -34,6 +34,40 @@ namespace TopChoiceHardware.Orders.Service.Controllers
 
                 return BadRequest(e.Message);
             }
+        }
+        [HttpGet]
+        public IActionResult GetFactura()
+        {
+            //try
+            //{
+                var usuarios = _service.GetFactura();
+
+                return Ok(usuarios);
+            //}
+            //catch (Exception)
+            //{
+
+            //    return StatusCode(500, "Internal server error");
+            //}
+        }
+        [HttpGet("{id}")]
+        public IActionResult GetFacturaById(int id)
+        {
+            //try
+            //{
+                var usuario = _service.GetFacturaById(id);
+                if (usuario == null)
+                {
+                    return NotFound();
+                }
+
+                return Ok(usuario);
+            //}
+            //catch (Exception)
+            //{
+
+            //    return StatusCode(500, "Internal server error");
+            //}
         }
 
     }

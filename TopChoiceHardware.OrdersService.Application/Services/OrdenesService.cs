@@ -1,19 +1,21 @@
 ﻿using TopChoiceHardware.OrdersService.Domain.Commands;
 using TopChoiceHardware.OrdersService.Domain.Entities;
 using TopChoiceHardware.OrdersService.Domain.DTOs;
+using System.Collections.Generic;
+
 namespace TopChoiceHardware.OrdersService.Application.Services
 {
     public interface IOrdenesService 
     {
         Orden CreateOrden(OrdenDto orden);
-        OrdenProducto CreateOrdenProducto(OrdenProductoDto ordenProducto);
-        MetodoPago CreateMetodoPago(MetodoPagoDto metodoPago);
-        Factura CreateFactura(FacturaDto factura);
+        List<Orden> GetOrden();
+        Orden GetOrdenById(int id);
 
     }
     public class OrdenesService : IOrdenesService
     {
         private IGenericRepository _repository;
+
 
         public OrdenesService (IGenericRepository repository) 
         {
@@ -31,37 +33,15 @@ namespace TopChoiceHardware.OrdersService.Application.Services
             _repository.Add(entity);
             return entity;
         }
-        public OrdenProducto CreateOrdenProducto (OrdenProductoDto ordenProducto) 
+
+        public List<Orden> GetOrden()
         {
-            var entity = new OrdenProducto
-            {
-                OrdenId = ordenProducto.OrdenId,
-                ProductId = ordenProducto.ProductId
-            };
-            _repository.Add(entity);
-            return entity;
+            return _repository.GetAll<Orden>();
         }
-        public MetodoPago CreateMetodoPago (MetodoPagoDto metodoPago) 
+
+        public Orden GetOrdenById(int id)
         {
-            var entity = new MetodoPago
-            {
-                Title = metodoPago.Title,
-                Description = metodoPago.Description
-            };
-            _repository.Add(entity);
-            return entity;
+            return _repository.GetById<Orden>(id);
         }
-        public Factura CreateFactura (FacturaDto factura) 
-        {
-            var entity = new Factura
-            {
-                UserId = factura.UserId,
-                OrderId = factura.OrderId,
-                Date = factura.Date
-            };
-            _repository.Add(entity);
-            return entity;
-        }
-        
     }
 }

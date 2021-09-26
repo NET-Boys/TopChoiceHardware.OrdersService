@@ -14,9 +14,9 @@ namespace TopChoiceHardware.Orders.Service.Controllers
     [ApiController]
     public class OrdenProductoController : ControllerBase
     {
-        private readonly IOrdenesService _service;
+        private readonly IOrdenProductoService _service;
 
-        public OrdenProductoController(IOrdenesService service)
+        public OrdenProductoController(IOrdenProductoService service)
         {
             _service = service;
         }
@@ -33,6 +33,40 @@ namespace TopChoiceHardware.Orders.Service.Controllers
             {
 
                 return BadRequest(e.Message);
+            }
+        }
+        [HttpGet]
+        public IActionResult GetOrdenProducto()
+        {
+            try
+            {
+                var usuarios = _service.GetOrdenProducto();
+
+                return Ok(usuarios);
+            }
+            catch (Exception)
+            {
+
+                return StatusCode(500, "Internal server error");
+            }
+        }
+        [HttpGet("{id}")]
+        public IActionResult GetOrdenProductoById(int id)
+        {
+            try
+            {
+                var usuario = _service.GetOrdenProductoById(id);
+                if (usuario == null)
+                {
+                    return NotFound();
+                }
+
+                return Ok(usuario);
+            }
+            catch (Exception)
+            {
+
+                return StatusCode(500, "Internal server error");
             }
         }
     }

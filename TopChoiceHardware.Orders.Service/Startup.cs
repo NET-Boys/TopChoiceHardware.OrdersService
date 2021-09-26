@@ -34,6 +34,10 @@ namespace TopChoiceHardware.Orders.Service
             services.AddDbContext<OrdenesContext>(options => options.UseSqlServer(connectionString));
             services.AddTransient<IGenericRepository, GenericRepository>();
             services.AddTransient<IOrdenesService, OrdenesService>();
+            services.AddTransient<IFacturaService, FacturaService>();
+            services.AddTransient<IMetodoPagoService, MetodoPagoService>();
+            services.AddTransient<IOrdenProductoService, OrdenProductoService>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
