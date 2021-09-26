@@ -20,19 +20,19 @@ namespace TopChoiceHardware.Orders.Service.Controllers
         {
             _service = service;
         }
-
-        [HttpPost]
-        [ProducesResponseType(typeof(MetodoPago), StatusCodes.Status201Created)]
-        public IActionResult Post(MetodoPagoDto metodoPagoDto)
+        [HttpGet]
+        public IActionResult GetMetodoPago()
         {
             try
             {
-                return new JsonResult(_service.CreateMetodoPago(metodoPagoDto)) { StatusCode = 201 };
+                var MetodoPago = _service.GetMetodoPago();
+
+                return Ok(MetodoPago);
             }
-            catch (Exception e)
+            catch (Exception)
             {
 
-                return BadRequest(e.Message);
+                return StatusCode(500, "Internal server error");
             }
         }
 

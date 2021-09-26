@@ -12,7 +12,7 @@ namespace TopChoiceHardware.OrdersService.Application.Services
     public interface IMetodoPagoService
     {
         MetodoPago CreateMetodoPago(MetodoPagoDto ordenProducto);
-
+        IEnumerable <MetodoPago> GetMetodoPago();
     }
     public class MetodoPagoService : IMetodoPagoService
     {
@@ -33,5 +33,9 @@ namespace TopChoiceHardware.OrdersService.Application.Services
             return entity;
         }
 
+        public IEnumerable<MetodoPago> GetMetodoPago()
+        {
+            return _repository.GetAll<MetodoPago>().ToArray();
+        }
     }
 }

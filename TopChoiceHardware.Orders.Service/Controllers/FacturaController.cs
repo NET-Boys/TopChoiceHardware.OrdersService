@@ -38,23 +38,23 @@ namespace TopChoiceHardware.Orders.Service.Controllers
         [HttpGet]
         public IActionResult GetFactura()
         {
-            //try
-            //{
+            try
+            {
                 var usuarios = _service.GetFactura();
 
                 return Ok(usuarios);
-            //}
-            //catch (Exception)
-            //{
+            }
+            catch (Exception)
+            {
 
-            //    return StatusCode(500, "Internal server error");
-            //}
+                return StatusCode(500, "Internal server error");
+            }
         }
         [HttpGet("{id}")]
         public IActionResult GetFacturaById(int id)
         {
-            //try
-            //{
+            try
+            {
                 var usuario = _service.GetFacturaById(id);
                 if (usuario == null)
                 {
@@ -62,12 +62,12 @@ namespace TopChoiceHardware.Orders.Service.Controllers
                 }
 
                 return Ok(usuario);
-            //}
-            //catch (Exception)
-            //{
+            }
+            catch (Exception)
+            {
 
-            //    return StatusCode(500, "Internal server error");
-            //}
+                return StatusCode(500, "Internal server error");
+            }
         }
 
     }
