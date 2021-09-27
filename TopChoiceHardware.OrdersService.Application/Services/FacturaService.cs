@@ -28,7 +28,7 @@ namespace TopChoiceHardware.OrdersService.Application.Services
             var entity = new Factura
             {
                 UserId = factura.UserId,
-                OrderId = factura.OrderId,
+                OrdenId = factura.OrdenId,
                 Date = factura.Date
             };
             _repository.Add(entity);

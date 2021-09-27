@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace TopChoiceHardware.OrdersService.AccessData.Migrations
 {
-    public partial class migracion1 : Migration
+    public partial class migracion : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -22,6 +22,49 @@ namespace TopChoiceHardware.OrdersService.AccessData.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Orden",
+                columns: table => new
+                {
+                    OrdenId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    UserId = table.Column<int>(type: "int", nullable: false),
+                    PaymentMethodId = table.Column<int>(type: "int", nullable: false),
+                    AddressId = table.Column<int>(type: "int", nullable: false),
+                    Total = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Orden", x => x.OrdenId);
+                    table.ForeignKey(
+                        name: "FK_Orden_MetodoPago_PaymentMethodId",
+                        column: x => x.PaymentMethodId,
+                        principalTable: "MetodoPago",
+                        principalColumn: "PaymentMethodId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Factura",
+                columns: table => new
+                {
+                    InvoiceId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    UserId = table.Column<int>(type: "int", nullable: false),
+                    OrdenId = table.Column<int>(type: "int", nullable: false),
+                    Date = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Factura", x => x.InvoiceId);
+                    table.ForeignKey(
+                        name: "FK_Factura_Orden_OrdenId",
+                        column: x => x.OrdenId,
+                        principalTable: "Orden",
+                        principalColumn: "OrdenId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "OrdenProducto",
                 columns: table => new
                 {
@@ -33,67 +76,9 @@ namespace TopChoiceHardware.OrdersService.AccessData.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_OrdenProducto", x => x.OrdenProductoId);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Orden",
-                columns: table => new
-                {
-                    OrdenId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    UserId = table.Column<int>(type: "int", nullable: false),
-                    PaymentMethodId = table.Column<int>(type: "int", nullable: false),
-                    AddressId = table.Column<int>(type: "int", nullable: false),
-                    Total = table.Column<int>(type: "int", nullable: false),
-                    OrdenProductoId = table.Column<int>(type: "int", nullable: true),
-                    OrdenProductoId1 = table.Column<int>(type: "int", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Orden", x => x.OrdenId);
                     table.ForeignKey(
-                        name: "FK_Orden_MetodoPago_PaymentMethodId",
-                        column: x => x.PaymentMethodId,
-                        principalTable: "MetodoPago",
-                        principalColumn: "PaymentMethodId",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Orden_OrdenProducto_OrdenProductoId",
-                        column: x => x.OrdenProductoId,
-                        principalTable: "OrdenProducto",
-                        principalColumn: "OrdenProductoId",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_Orden_OrdenProducto_OrdenProductoId1",
-                        column: x => x.OrdenProductoId1,
-                        principalTable: "OrdenProducto",
-                        principalColumn: "OrdenProductoId",
-                        onDelete: ReferentialAction.Restrict);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Factura",
-                columns: table => new
-                {
-                    InvoiceId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    UserId = table.Column<int>(type: "int", nullable: false),
-                    OrderId = table.Column<int>(type: "int", nullable: false),
-                    Date = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    OrdenId = table.Column<int>(type: "int", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Factura", x => x.InvoiceId);
-                    table.ForeignKey(
-                        name: "FK_Factura_Orden_OrdenId",
+                        name: "FK_OrdenProducto_Orden_OrdenId",
                         column: x => x.OrdenId,
-                        principalTable: "Orden",
-                        principalColumn: "OrdenId",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_Factura_Orden_UserId",
-                        column: x => x.UserId,
                         principalTable: "Orden",
                         principalColumn: "OrdenId",
                         onDelete: ReferentialAction.Cascade);
@@ -105,24 +90,14 @@ namespace TopChoiceHardware.OrdersService.AccessData.Migrations
                 column: "OrdenId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Factura_UserId",
-                table: "Factura",
-                column: "UserId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Orden_OrdenProductoId",
-                table: "Orden",
-                column: "OrdenProductoId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Orden_OrdenProductoId1",
-                table: "Orden",
-                column: "OrdenProductoId1");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Orden_PaymentMethodId",
                 table: "Orden",
                 column: "PaymentMethodId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_OrdenProducto_OrdenId",
+                table: "OrdenProducto",
+                column: "OrdenId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -131,13 +106,13 @@ namespace TopChoiceHardware.OrdersService.AccessData.Migrations
                 name: "Factura");
 
             migrationBuilder.DropTable(
+                name: "OrdenProducto");
+
+            migrationBuilder.DropTable(
                 name: "Orden");
 
             migrationBuilder.DropTable(
                 name: "MetodoPago");
-
-            migrationBuilder.DropTable(
-                name: "OrdenProducto");
         }
     }
 }

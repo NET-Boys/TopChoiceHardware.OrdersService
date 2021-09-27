@@ -10,15 +10,11 @@ namespace TopChoiceHardware.OrdersService.Domain.DTOs
     public class FacturaDto
     {
 
-        public int InvoiceId { get; set; }
         public int UserId { get; set; }
-        public int OrderId { get; set; }
+        public int OrdenId { get; set; }
         public DateTime Date { get; set; }
-
-        public OrdenDto Orden { get; set; }
-        public OrdenDto User { get; set; }
+        public Orden Orden { get; set; }
 
 
-        
     }
 }

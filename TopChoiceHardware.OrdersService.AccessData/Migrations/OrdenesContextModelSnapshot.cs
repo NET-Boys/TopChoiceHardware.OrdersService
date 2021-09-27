@@ -29,10 +29,7 @@ namespace TopChoiceHardware.OrdersService.AccessData.Migrations
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("OrdenId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("OrderId")
+                    b.Property<int>("OrdenId")
                         .HasColumnType("int");
 
                     b.Property<int>("UserId")
@@ -41,8 +38,6 @@ namespace TopChoiceHardware.OrdersService.AccessData.Migrations
                     b.HasKey("InvoiceId");
 
                     b.HasIndex("OrdenId");
-
-                    b.HasIndex("UserId");
 
                     b.ToTable("Factura");
                 });
@@ -79,12 +74,6 @@ namespace TopChoiceHardware.OrdersService.AccessData.Migrations
                     b.Property<int>("AddressId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("OrdenProductoId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("OrdenProductoId1")
-                        .HasColumnType("int");
-
                     b.Property<int>("PaymentMethodId")
                         .HasColumnType("int");
 
@@ -95,10 +84,6 @@ namespace TopChoiceHardware.OrdersService.AccessData.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("OrdenId");
-
-                    b.HasIndex("OrdenProductoId");
-
-                    b.HasIndex("OrdenProductoId1");
 
                     b.HasIndex("PaymentMethodId");
 
@@ -120,6 +105,8 @@ namespace TopChoiceHardware.OrdersService.AccessData.Migrations
 
                     b.HasKey("OrdenProductoId");
 
+                    b.HasIndex("OrdenId");
+
                     b.ToTable("OrdenProducto");
                 });
 
@@ -127,29 +114,15 @@ namespace TopChoiceHardware.OrdersService.AccessData.Migrations
                 {
                     b.HasOne("TopChoiceHardware.OrdersService.Domain.Entities.Orden", "Orden")
                         .WithMany()
-                        .HasForeignKey("OrdenId");
-
-                    b.HasOne("TopChoiceHardware.OrdersService.Domain.Entities.Orden", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
+                        .HasForeignKey("OrdenId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Orden");
-
-                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("TopChoiceHardware.OrdersService.Domain.Entities.Orden", b =>
                 {
-                    b.HasOne("TopChoiceHardware.OrdersService.Domain.Entities.OrdenProducto", null)
-                        .WithMany("Ordenes")
-                        .HasForeignKey("OrdenProductoId");
-
-                    b.HasOne("TopChoiceHardware.OrdersService.Domain.Entities.OrdenProducto", null)
-                        .WithMany("Productos")
-                        .HasForeignKey("OrdenProductoId1");
-
                     b.HasOne("TopChoiceHardware.OrdersService.Domain.Entities.MetodoPago", "PaymentMethod")
                         .WithMany()
                         .HasForeignKey("PaymentMethodId")
@@ -161,9 +134,13 @@ namespace TopChoiceHardware.OrdersService.AccessData.Migrations
 
             modelBuilder.Entity("TopChoiceHardware.OrdersService.Domain.Entities.OrdenProducto", b =>
                 {
-                    b.Navigation("Ordenes");
+                    b.HasOne("TopChoiceHardware.OrdersService.Domain.Entities.Orden", "Orden")
+                        .WithMany()
+                        .HasForeignKey("OrdenId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Navigation("Productos");
+                    b.Navigation("Orden");
                 });
 #pragma warning restore 612, 618
         }

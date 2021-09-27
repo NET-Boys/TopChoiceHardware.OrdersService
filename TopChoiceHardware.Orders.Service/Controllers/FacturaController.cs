@@ -50,12 +50,12 @@ namespace TopChoiceHardware.Orders.Service.Controllers
                 return StatusCode(500, "Internal server error");
             }
         }
-        [HttpGet("{id}")]
-        public IActionResult GetFacturaById(int id)
+        [HttpGet("{facturaId}")]
+        public IActionResult GetFacturaById(int facturaId)
         {
             try
             {
-                var usuario = _service.GetFacturaById(id);
+                var usuario = _service.GetFacturaById(facturaId);
                 if (usuario == null)
                 {
                     return NotFound();

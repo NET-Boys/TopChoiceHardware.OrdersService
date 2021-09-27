@@ -48,12 +48,12 @@ namespace TopChoiceHardware.Orders.Service.Controllers
                 return StatusCode(500, "Internal server error");
             }
         }
-        [HttpGet("{id}")]
-        public IActionResult GetOrdenById(int id)
+        [HttpGet("{ordenId}")]
+        public IActionResult GetOrdenById(int ordenId)
         {
             try
             {
-                var usuario = _service.GetOrdenById(id);
+                var usuario = _service.GetOrdenById(ordenId);
                 if (usuario == null)
                 {
                     return NotFound();

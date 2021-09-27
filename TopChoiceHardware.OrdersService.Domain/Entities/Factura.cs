@@ -10,12 +10,10 @@ namespace TopChoiceHardware.OrdersService.Domain.Entities
     {
         public int InvoiceId { get; set; }
         public int UserId { get; set; }
-        public int OrderId { get; set; }
+        public int OrdenId { get; set; }
         public DateTime Date { get; set; }
 
         public Orden Orden { get; set; }
-        public Orden User { get; set; }
-
 
     }
 }

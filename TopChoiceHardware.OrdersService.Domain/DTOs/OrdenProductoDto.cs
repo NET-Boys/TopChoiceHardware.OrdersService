@@ -7,7 +7,6 @@ namespace TopChoiceHardware.OrdersService.Domain.DTOs
     {
         public int OrdenId { get; set; }
         public int ProductId { get; set; }
-        public ICollection<Orden> Ordenes { get; set; }
-        public ICollection<Orden> Productos { get; set; }
+        public Orden Orden { get; set; }
     }
 }
