@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using TopChoiceHardware.OrdersService.Domain.Commands;
 using TopChoiceHardware.OrdersService.Domain.DTOs;
 using TopChoiceHardware.OrdersService.Domain.Entities;

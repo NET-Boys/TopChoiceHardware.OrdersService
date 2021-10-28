@@ -1,14 +1,14 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using TopChoiceHardware.OrdersService.AccessData;
-using Microsoft.EntityFrameworkCore;
-using TopChoiceHardware.OrdersService.Application.Services;
+using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using TopChoiceHardware.OrdersService.Domain.Commands;
+using TopChoiceHardware.OrdersService.AccessData;
 using TopChoiceHardware.OrdersService.AccessData.Commands;
+using TopChoiceHardware.OrdersService.Application.Services;
+using TopChoiceHardware.OrdersService.Domain.Commands;
 
 namespace TopChoiceHardware.Orders.Service
 {

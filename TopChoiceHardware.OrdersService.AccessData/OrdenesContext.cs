@@ -1,5 +1,5 @@
-﻿using TopChoiceHardware.OrdersService.Domain.Entities;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using TopChoiceHardware.OrdersService.Domain.Entities;
 
 namespace TopChoiceHardware.OrdersService.AccessData
 {

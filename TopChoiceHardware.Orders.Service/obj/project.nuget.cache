@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xU0LJrabr3KkmFcatwZ1R6tYBPphhwr5lV2myFwOzQX8/W7mUYpj+SkEQRDsT4nzAvynQXt02obwaUaAUqwQLg==",
+  "dgSpecHash": "covSGf6Cwxk7b/jBPZWA7IQtpEYc+c7NECbZgi3Kmfxp3lMp4koOeayTyHlx5PPw5A9OIpyZfqgp+Ily8+aK5Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Aaron\\source\\repos\\TopChoiceHardware.Orders.Service\\TopChoiceHardware.Orders.Service\\TopChoiceHardware.Orders.Service.csproj",
+  "projectFilePath": "C:\\Users\\Aaron\\Desktop\\topchoise\\TopChoiceHardware.OrdersService\\TopChoiceHardware.Orders.Service\\TopChoiceHardware.Orders.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Aaron\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Aaron\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

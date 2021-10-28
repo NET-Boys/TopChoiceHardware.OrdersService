@@ -5781,11 +5781,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aaron\\source\\repos\\TopChoiceHardware.Orders.Service\\TopChoiceHardware.OrdersService.Application\\TopChoiceHardware.OrdersService.Application.csproj",
+      "projectUniqueName": "C:\\Users\\Aaron\\Desktop\\topchoise\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.Application\\TopChoiceHardware.OrdersService.Application.csproj",
       "projectName": "TopChoiceHardware.OrdersService.Application",
-      "projectPath": "C:\\Users\\Aaron\\source\\repos\\TopChoiceHardware.Orders.Service\\TopChoiceHardware.OrdersService.Application\\TopChoiceHardware.OrdersService.Application.csproj",
+      "projectPath": "C:\\Users\\Aaron\\Desktop\\topchoise\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.Application\\TopChoiceHardware.OrdersService.Application.csproj",
       "packagesPath": "C:\\Users\\Aaron\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aaron\\source\\repos\\TopChoiceHardware.Orders.Service\\TopChoiceHardware.OrdersService.Application\\obj\\",
+      "outputPath": "C:\\Users\\Aaron\\Desktop\\topchoise\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Aaron\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5802,8 +5802,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Aaron\\source\\repos\\TopChoiceHardware.Orders.Service\\TopChoiceHardware.OrdersService.Domain\\TopChoiceHardware.OrdersService.Domain.csproj": {
-              "projectPath": "C:\\Users\\Aaron\\source\\repos\\TopChoiceHardware.Orders.Service\\TopChoiceHardware.OrdersService.Domain\\TopChoiceHardware.OrdersService.Domain.csproj"
+            "C:\\Users\\Aaron\\Desktop\\topchoise\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.Domain\\TopChoiceHardware.OrdersService.Domain.csproj": {
+              "projectPath": "C:\\Users\\Aaron\\Desktop\\topchoise\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.Domain\\TopChoiceHardware.OrdersService.Domain.csproj"
             }
           }
         }
@@ -5844,7 +5844,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

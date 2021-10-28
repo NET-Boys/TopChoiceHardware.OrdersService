@@ -1,7 +1,7 @@
-﻿using TopChoiceHardware.OrdersService.Domain.Commands;
-using TopChoiceHardware.OrdersService.Domain.Entities;
+﻿using System.Collections.Generic;
+using TopChoiceHardware.OrdersService.Domain.Commands;
 using TopChoiceHardware.OrdersService.Domain.DTOs;
-using System.Collections.Generic;
+using TopChoiceHardware.OrdersService.Domain.Entities;
 
 namespace TopChoiceHardware.OrdersService.Application.Services
 {

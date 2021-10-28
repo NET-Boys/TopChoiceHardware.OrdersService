@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = TopChoiceHardware.OrdersService.AccessData
-build_property.ProjectDir = C:\Users\Aaron\source\repos\TopChoiceHardware.Orders.Service\TopChoiceHardware.OrdersService.AccessData\
+build_property.ProjectDir = C:\Users\Aaron\Desktop\topchoise\TopChoiceHardware.OrdersService\TopChoiceHardware.OrdersService.AccessData\

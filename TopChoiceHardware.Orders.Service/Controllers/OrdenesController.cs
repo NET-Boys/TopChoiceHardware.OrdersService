@@ -1,14 +1,14 @@
-﻿using System;
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using TopChoiceHardware.OrdersService.Domain.Entities;
-using TopChoiceHardware.OrdersService.Domain.DTOs;
+using System;
 using TopChoiceHardware.OrdersService.Application.Services;
+using TopChoiceHardware.OrdersService.Domain.DTOs;
+using TopChoiceHardware.OrdersService.Domain.Entities;
 
 namespace TopChoiceHardware.Orders.Service.Controllers
 {
 
-        [Route("api/[controller]")]
+    [Route("api/[controller]")]
         [ApiController]
         public class OrderController : ControllerBase
         {

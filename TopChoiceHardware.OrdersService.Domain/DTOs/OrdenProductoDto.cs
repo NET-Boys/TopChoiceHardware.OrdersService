@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using TopChoiceHardware.OrdersService.Domain.Entities;
+﻿using TopChoiceHardware.OrdersService.Domain.Entities;
 
 namespace TopChoiceHardware.OrdersService.Domain.DTOs
 {
