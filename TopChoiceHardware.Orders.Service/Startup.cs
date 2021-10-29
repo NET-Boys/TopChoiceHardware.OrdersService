@@ -29,7 +29,16 @@ namespace TopChoiceHardware.Orders.Service
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "TopChoiceHardware.OrderService", Version = "v1" });
+
             });
+            services.AddCors(cor =>
+            {
+                cor.AddPolicy("AllowOrigin", options => options
+                                                               .AllowAnyOrigin()
+                                                               .AllowAnyMethod()
+                                                               .AllowAnyHeader());
+            });
+
             var connectionString = Configuration.GetSection("ConnectionString").Value;
             services.AddDbContext<OrdenesContext>(options => options.UseSqlServer(connectionString));
             services.AddTransient<IGenericRepository, GenericRepository>();
@@ -49,6 +58,8 @@ namespace TopChoiceHardware.Orders.Service
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "TopChoiceHardware.UsersService v1"));
             }
+            app.UseCors(options => options.AllowAnyOrigin()
+                                          .AllowAnyHeader());
 
             app.UseHttpsRedirection();
 
