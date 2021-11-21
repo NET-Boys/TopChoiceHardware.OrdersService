@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PG7a+x7nSg158sXHNh2dHIbI19MT4b48W8w11RldItvOF6J5r4VtjBpgOIQgg1BuQAEw+DUvqvFxdf8yDR4vhg==",
+  "dgSpecHash": "x/4p3izkAPEY+zHpqCkSsqG4LMyWVLk6tQHc0m5xsbpYPK2OAlg0hTxWUf/xJtnEyMu37fNcu+tpeEM8akcwiA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Aaron\\Desktop\\topchoise\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.Domain\\TopChoiceHardware.OrdersService.Domain.csproj",
+  "projectFilePath": "C:\\Users\\Aaron\\Desktop\\OrdersService\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.Domain\\TopChoiceHardware.OrdersService.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

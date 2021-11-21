@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using TopChoiceHardware.OrdersService.Application.Services;
@@ -10,7 +11,8 @@ namespace TopChoiceHardware.Orders.Service.Controllers
 
     [Route("api/[controller]")]
         [ApiController]
-        public class OrderController : ControllerBase
+    [Authorize(AuthenticationSchemes = Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme)]
+    public class OrderController : ControllerBase
         {
             private readonly IOrdenesService _service;
 

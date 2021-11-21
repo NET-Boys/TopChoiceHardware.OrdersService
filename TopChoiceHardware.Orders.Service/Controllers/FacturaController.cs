@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Net;
 using TopChoiceHardware.OrdersService.Application.Services;
 using TopChoiceHardware.OrdersService.Domain.DTOs;
 using TopChoiceHardware.OrdersService.Domain.Entities;
@@ -9,6 +11,7 @@ namespace TopChoiceHardware.Orders.Service.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(AuthenticationSchemes = Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme)]
     public class FacturaController : ControllerBase
     {
         private readonly IFacturaService _service;

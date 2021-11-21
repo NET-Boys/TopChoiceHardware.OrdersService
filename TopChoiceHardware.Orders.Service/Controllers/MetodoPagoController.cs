@@ -1,11 +1,14 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Net;
 using TopChoiceHardware.OrdersService.Application.Services;
 
 namespace TopChoiceHardware.Orders.Service.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(AuthenticationSchemes = Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme)]
     public class MetodoPagoController : ControllerBase
     {
         private readonly IMetodoPagoService _service;
