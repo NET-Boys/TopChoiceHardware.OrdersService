@@ -36,6 +36,35 @@ namespace TopChoiceHardware.OrdersService.AccessData
                 entity.HasKey(e => e.OrdenProductoId);
 
             });
+
+            modelBuilder.Entity<MetodoPago>().HasData(
+
+                new MetodoPago
+                {
+                    PaymentMethodId = 1,
+                    Title = "Visa",
+                    Description = "Tarjeta Visa"
+                },
+                new MetodoPago
+                {
+                    PaymentMethodId = 2,
+                    Title = "Master Card",
+                    Description = "Tarjeta Master Card"
+                },
+                new MetodoPago
+                {
+                    PaymentMethodId = 3,
+                    Title = "Mercado Pago",
+                    Description = "Mercado Pago"
+                },
+                new MetodoPago
+                {
+                    PaymentMethodId = 4,
+                    Title = "BitCoin",
+                    Description = "Cripto Monedas"
+                }
+
+            );
         }
     }
 }

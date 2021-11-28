@@ -10,8 +10,8 @@ using TopChoiceHardware.OrdersService.AccessData;
 namespace TopChoiceHardware.OrdersService.AccessData.Migrations
 {
     [DbContext(typeof(OrdenesContext))]
-    [Migration("20210927015633_migracion")]
-    partial class migracion
+    [Migration("20211128235058_init")]
+    partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -64,6 +64,32 @@ namespace TopChoiceHardware.OrdersService.AccessData.Migrations
                     b.HasKey("PaymentMethodId");
 
                     b.ToTable("MetodoPago");
+
+                    b.HasData(
+                        new
+                        {
+                            PaymentMethodId = 1,
+                            Description = "Tarjeta Visa",
+                            Title = "Visa"
+                        },
+                        new
+                        {
+                            PaymentMethodId = 2,
+                            Description = "Tarjeta Master Card",
+                            Title = "Master Card"
+                        },
+                        new
+                        {
+                            PaymentMethodId = 3,
+                            Description = "Mercado Pago",
+                            Title = "Mercado Pago"
+                        },
+                        new
+                        {
+                            PaymentMethodId = 4,
+                            Description = "Cripto Monedas",
+                            Title = "BitCoin"
+                        });
                 });
 
             modelBuilder.Entity("TopChoiceHardware.OrdersService.Domain.Entities.Orden", b =>

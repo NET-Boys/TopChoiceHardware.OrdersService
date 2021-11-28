@@ -46,6 +46,7 @@ namespace TopChoiceHardware.Orders.Service
             services.AddTransient<IFacturaService, FacturaService>();
             services.AddTransient<IMetodoPagoService, MetodoPagoService>();
             services.AddTransient<IOrdenProductoService, OrdenProductoService>();
+            services.AddTransient<IEmailService, EmailService>();
 
         }
 

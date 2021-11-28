@@ -13,10 +13,12 @@ namespace TopChoiceHardware.Orders.Service.Controllers
         public class OrderController : ControllerBase
         {
             private readonly IOrdenesService _service;
+            private readonly IEmailService _emailService;
 
-            public OrderController(IOrdenesService service)
+            public OrderController(IOrdenesService service, IEmailService emailService)
             {
                 _service = service;
+                _emailService = emailService;
             }
 
             [HttpPost]
@@ -25,6 +27,7 @@ namespace TopChoiceHardware.Orders.Service.Controllers
             {
                 try
                 {
+                    _emailService.SendEmailAsync(ordendto.Email, ordendto.Total);
                     return new JsonResult(_service.CreateOrden(ordendto)) { StatusCode = 201 };
                 }
                 catch (Exception e)
@@ -33,41 +36,41 @@ namespace TopChoiceHardware.Orders.Service.Controllers
                     return BadRequest(e.Message);
                 }
             }
-        [HttpGet]
-        public IActionResult GetOrden()
-        {
-            try
+            [HttpGet]
+            public IActionResult GetOrden()
             {
-                var ordenes = _service.GetOrden();
-
-                return Ok(ordenes);
-            }
-            catch (Exception)
-            {
-
-                return StatusCode(500, "Internal server error");
-            }
-        }
-        [HttpGet("{ordenId}")]
-        public IActionResult GetOrdenById(int ordenId)
-        {
-            try
-            {
-                var usuario = _service.GetOrdenById(ordenId);
-                if (usuario == null)
+                try
                 {
-                    return NotFound();
+                    var ordenes = _service.GetOrden();
+
+                    return Ok(ordenes);
                 }
+                catch (Exception)
+                {
 
-                return Ok(usuario);
+                    return StatusCode(500, "Internal server error");
+                }
             }
-            catch (Exception)
+            [HttpGet("{ordenId}")]
+            public IActionResult GetOrdenById(int ordenId)
             {
+                try
+                {
+                    var usuario = _service.GetOrdenById(ordenId);
+                    if (usuario == null)
+                    {
+                        return NotFound();
+                    }
 
-                return StatusCode(500, "Internal server error");
+                    return Ok(usuario);
+                }
+                catch (Exception)
+                {
+
+                    return StatusCode(500, "Internal server error");
+                }
             }
-        }
 
-    }
+        }
     
 }

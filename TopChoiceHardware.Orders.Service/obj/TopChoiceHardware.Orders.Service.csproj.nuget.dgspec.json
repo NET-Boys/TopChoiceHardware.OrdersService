@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aaron\\Desktop\\topchoise\\TopChoiceHardware.OrdersService\\TopChoiceHardware.Orders.Service\\TopChoiceHardware.Orders.Service.csproj": {}
+    "C:\\Users\\kerne\\Desktop\\Top Choice Orders Service\\TopChoiceHardware.OrdersService\\TopChoiceHardware.Orders.Service\\TopChoiceHardware.Orders.Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aaron\\Desktop\\topchoise\\TopChoiceHardware.OrdersService\\TopChoiceHardware.Orders.Service\\TopChoiceHardware.Orders.Service.csproj": {
+    "C:\\Users\\kerne\\Desktop\\Top Choice Orders Service\\TopChoiceHardware.OrdersService\\TopChoiceHardware.Orders.Service\\TopChoiceHardware.Orders.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aaron\\Desktop\\topchoise\\TopChoiceHardware.OrdersService\\TopChoiceHardware.Orders.Service\\TopChoiceHardware.Orders.Service.csproj",
+        "projectUniqueName": "C:\\Users\\kerne\\Desktop\\Top Choice Orders Service\\TopChoiceHardware.OrdersService\\TopChoiceHardware.Orders.Service\\TopChoiceHardware.Orders.Service.csproj",
         "projectName": "TopChoiceHardware.Orders.Service",
-        "projectPath": "C:\\Users\\Aaron\\Desktop\\topchoise\\TopChoiceHardware.OrdersService\\TopChoiceHardware.Orders.Service\\TopChoiceHardware.Orders.Service.csproj",
-        "packagesPath": "C:\\Users\\Aaron\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aaron\\Desktop\\topchoise\\TopChoiceHardware.OrdersService\\TopChoiceHardware.Orders.Service\\obj\\",
+        "projectPath": "C:\\Users\\kerne\\Desktop\\Top Choice Orders Service\\TopChoiceHardware.OrdersService\\TopChoiceHardware.Orders.Service\\TopChoiceHardware.Orders.Service.csproj",
+        "packagesPath": "C:\\Users\\kerne\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kerne\\Desktop\\Top Choice Orders Service\\TopChoiceHardware.OrdersService\\TopChoiceHardware.Orders.Service\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Aaron\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kerne\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,11 +32,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Aaron\\Desktop\\topchoise\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.AccessData\\TopChoiceHardware.OrdersService.AccessData.csproj": {
-                "projectPath": "C:\\Users\\Aaron\\Desktop\\topchoise\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.AccessData\\TopChoiceHardware.OrdersService.AccessData.csproj"
+              "C:\\Users\\kerne\\Desktop\\Top Choice Orders Service\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.AccessData\\TopChoiceHardware.OrdersService.AccessData.csproj": {
+                "projectPath": "C:\\Users\\kerne\\Desktop\\Top Choice Orders Service\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.AccessData\\TopChoiceHardware.OrdersService.AccessData.csproj"
               },
-              "C:\\Users\\Aaron\\Desktop\\topchoise\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.Application\\TopChoiceHardware.OrdersService.Application.csproj": {
-                "projectPath": "C:\\Users\\Aaron\\Desktop\\topchoise\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.Application\\TopChoiceHardware.OrdersService.Application.csproj"
+              "C:\\Users\\kerne\\Desktop\\Top Choice Orders Service\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.Application\\TopChoiceHardware.OrdersService.Application.csproj": {
+                "projectPath": "C:\\Users\\kerne\\Desktop\\Top Choice Orders Service\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.Application\\TopChoiceHardware.OrdersService.Application.csproj"
               }
             }
           }
@@ -80,21 +84,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Aaron\\Desktop\\topchoise\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.AccessData\\TopChoiceHardware.OrdersService.AccessData.csproj": {
+    "C:\\Users\\kerne\\Desktop\\Top Choice Orders Service\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.AccessData\\TopChoiceHardware.OrdersService.AccessData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aaron\\Desktop\\topchoise\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.AccessData\\TopChoiceHardware.OrdersService.AccessData.csproj",
+        "projectUniqueName": "C:\\Users\\kerne\\Desktop\\Top Choice Orders Service\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.AccessData\\TopChoiceHardware.OrdersService.AccessData.csproj",
         "projectName": "TopChoiceHardware.OrdersService.AccessData",
-        "projectPath": "C:\\Users\\Aaron\\Desktop\\topchoise\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.AccessData\\TopChoiceHardware.OrdersService.AccessData.csproj",
-        "packagesPath": "C:\\Users\\Aaron\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aaron\\Desktop\\topchoise\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.AccessData\\obj\\",
+        "projectPath": "C:\\Users\\kerne\\Desktop\\Top Choice Orders Service\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.AccessData\\TopChoiceHardware.OrdersService.AccessData.csproj",
+        "packagesPath": "C:\\Users\\kerne\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kerne\\Desktop\\Top Choice Orders Service\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.AccessData\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Aaron\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kerne\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -108,11 +116,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Aaron\\Desktop\\topchoise\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.Application\\TopChoiceHardware.OrdersService.Application.csproj": {
-                "projectPath": "C:\\Users\\Aaron\\Desktop\\topchoise\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.Application\\TopChoiceHardware.OrdersService.Application.csproj"
+              "C:\\Users\\kerne\\Desktop\\Top Choice Orders Service\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.Application\\TopChoiceHardware.OrdersService.Application.csproj": {
+                "projectPath": "C:\\Users\\kerne\\Desktop\\Top Choice Orders Service\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.Application\\TopChoiceHardware.OrdersService.Application.csproj"
               },
-              "C:\\Users\\Aaron\\Desktop\\topchoise\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.Domain\\TopChoiceHardware.OrdersService.Domain.csproj": {
-                "projectPath": "C:\\Users\\Aaron\\Desktop\\topchoise\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.Domain\\TopChoiceHardware.OrdersService.Domain.csproj"
+              "C:\\Users\\kerne\\Desktop\\Top Choice Orders Service\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.Domain\\TopChoiceHardware.OrdersService.Domain.csproj": {
+                "projectPath": "C:\\Users\\kerne\\Desktop\\Top Choice Orders Service\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.Domain\\TopChoiceHardware.OrdersService.Domain.csproj"
               }
             }
           }
@@ -153,21 +161,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Aaron\\Desktop\\topchoise\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.Application\\TopChoiceHardware.OrdersService.Application.csproj": {
+    "C:\\Users\\kerne\\Desktop\\Top Choice Orders Service\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.Application\\TopChoiceHardware.OrdersService.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aaron\\Desktop\\topchoise\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.Application\\TopChoiceHardware.OrdersService.Application.csproj",
+        "projectUniqueName": "C:\\Users\\kerne\\Desktop\\Top Choice Orders Service\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.Application\\TopChoiceHardware.OrdersService.Application.csproj",
         "projectName": "TopChoiceHardware.OrdersService.Application",
-        "projectPath": "C:\\Users\\Aaron\\Desktop\\topchoise\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.Application\\TopChoiceHardware.OrdersService.Application.csproj",
-        "packagesPath": "C:\\Users\\Aaron\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aaron\\Desktop\\topchoise\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.Application\\obj\\",
+        "projectPath": "C:\\Users\\kerne\\Desktop\\Top Choice Orders Service\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.Application\\TopChoiceHardware.OrdersService.Application.csproj",
+        "packagesPath": "C:\\Users\\kerne\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kerne\\Desktop\\Top Choice Orders Service\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Aaron\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kerne\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -181,8 +193,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Aaron\\Desktop\\topchoise\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.Domain\\TopChoiceHardware.OrdersService.Domain.csproj": {
-                "projectPath": "C:\\Users\\Aaron\\Desktop\\topchoise\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.Domain\\TopChoiceHardware.OrdersService.Domain.csproj"
+              "C:\\Users\\kerne\\Desktop\\Top Choice Orders Service\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.Domain\\TopChoiceHardware.OrdersService.Domain.csproj": {
+                "projectPath": "C:\\Users\\kerne\\Desktop\\Top Choice Orders Service\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.Domain\\TopChoiceHardware.OrdersService.Domain.csproj"
               }
             }
           }
@@ -206,6 +218,10 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[5.0.10, )"
+            },
+            "SendGrid": {
+              "target": "Package",
+              "version": "[9.25.0, )"
             }
           },
           "imports": [
@@ -223,21 +239,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Aaron\\Desktop\\topchoise\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.Domain\\TopChoiceHardware.OrdersService.Domain.csproj": {
+    "C:\\Users\\kerne\\Desktop\\Top Choice Orders Service\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.Domain\\TopChoiceHardware.OrdersService.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aaron\\Desktop\\topchoise\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.Domain\\TopChoiceHardware.OrdersService.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\kerne\\Desktop\\Top Choice Orders Service\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.Domain\\TopChoiceHardware.OrdersService.Domain.csproj",
         "projectName": "TopChoiceHardware.OrdersService.Domain",
-        "projectPath": "C:\\Users\\Aaron\\Desktop\\topchoise\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.Domain\\TopChoiceHardware.OrdersService.Domain.csproj",
-        "packagesPath": "C:\\Users\\Aaron\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aaron\\Desktop\\topchoise\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.Domain\\obj\\",
+        "projectPath": "C:\\Users\\kerne\\Desktop\\Top Choice Orders Service\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.Domain\\TopChoiceHardware.OrdersService.Domain.csproj",
+        "packagesPath": "C:\\Users\\kerne\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kerne\\Desktop\\Top Choice Orders Service\\TopChoiceHardware.OrdersService\\TopChoiceHardware.OrdersService.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Aaron\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kerne\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -277,7 +297,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

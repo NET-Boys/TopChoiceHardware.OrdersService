@@ -1,9 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
-using System;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace TopChoiceHardware.OrdersService.AccessData.Migrations
 {
-    public partial class migracion : Migration
+    public partial class init : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -82,6 +82,17 @@ namespace TopChoiceHardware.OrdersService.AccessData.Migrations
                         principalTable: "Orden",
                         principalColumn: "OrdenId",
                         onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.InsertData(
+                table: "MetodoPago",
+                columns: new[] { "PaymentMethodId", "Description", "Title" },
+                values: new object[,]
+                {
+                    { 1, "Tarjeta Visa", "Visa" },
+                    { 2, "Tarjeta Master Card", "Master Card" },
+                    { 3, "Mercado Pago", "Mercado Pago" },
+                    { 4, "Cripto Monedas", "BitCoin" }
                 });
 
             migrationBuilder.CreateIndex(

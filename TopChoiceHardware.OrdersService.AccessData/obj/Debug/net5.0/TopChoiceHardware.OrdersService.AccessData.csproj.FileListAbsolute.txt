@@ -38,3 +38,23 @@ C:\Users\Aaron\Desktop\topchoise\TopChoiceHardware.OrdersService\TopChoiceHardwa
 C:\Users\Aaron\Desktop\topchoise\TopChoiceHardware.OrdersService\TopChoiceHardware.OrdersService.AccessData\obj\Debug\net5.0\ref\TopChoiceHardware.OrdersService.AccessData.dll
 C:\Users\Aaron\Desktop\topchoise\TopChoiceHardware.OrdersService\TopChoiceHardware.OrdersService.AccessData\obj\Debug\net5.0\TopChoiceHardware.OrdersService.AccessData.pdb
 C:\Users\Aaron\Desktop\topchoise\TopChoiceHardware.OrdersService\TopChoiceHardware.OrdersService.AccessData\obj\Debug\net5.0\TopChoiceHardware.OrdersService.AccessData.genruntimeconfig.cache
+C:\Users\kerne\Desktop\Top Choice Orders Service\TopChoiceHardware.OrdersService\TopChoiceHardware.OrdersService.AccessData\bin\Debug\net5.0\TopChoiceHardware.OrdersService.AccessData.deps.json
+C:\Users\kerne\Desktop\Top Choice Orders Service\TopChoiceHardware.OrdersService\TopChoiceHardware.OrdersService.AccessData\bin\Debug\net5.0\TopChoiceHardware.OrdersService.AccessData.runtimeconfig.json
+C:\Users\kerne\Desktop\Top Choice Orders Service\TopChoiceHardware.OrdersService\TopChoiceHardware.OrdersService.AccessData\bin\Debug\net5.0\TopChoiceHardware.OrdersService.AccessData.runtimeconfig.dev.json
+C:\Users\kerne\Desktop\Top Choice Orders Service\TopChoiceHardware.OrdersService\TopChoiceHardware.OrdersService.AccessData\bin\Debug\net5.0\TopChoiceHardware.OrdersService.AccessData.dll
+C:\Users\kerne\Desktop\Top Choice Orders Service\TopChoiceHardware.OrdersService\TopChoiceHardware.OrdersService.AccessData\bin\Debug\net5.0\ref\TopChoiceHardware.OrdersService.AccessData.dll
+C:\Users\kerne\Desktop\Top Choice Orders Service\TopChoiceHardware.OrdersService\TopChoiceHardware.OrdersService.AccessData\bin\Debug\net5.0\TopChoiceHardware.OrdersService.AccessData.pdb
+C:\Users\kerne\Desktop\Top Choice Orders Service\TopChoiceHardware.OrdersService\TopChoiceHardware.OrdersService.AccessData\bin\Debug\net5.0\TopChoiceHardware.OrdersService.Application.dll
+C:\Users\kerne\Desktop\Top Choice Orders Service\TopChoiceHardware.OrdersService\TopChoiceHardware.OrdersService.AccessData\bin\Debug\net5.0\TopChoiceHardware.OrdersService.Domain.dll
+C:\Users\kerne\Desktop\Top Choice Orders Service\TopChoiceHardware.OrdersService\TopChoiceHardware.OrdersService.AccessData\bin\Debug\net5.0\TopChoiceHardware.OrdersService.Application.pdb
+C:\Users\kerne\Desktop\Top Choice Orders Service\TopChoiceHardware.OrdersService\TopChoiceHardware.OrdersService.AccessData\bin\Debug\net5.0\TopChoiceHardware.OrdersService.Domain.pdb
+C:\Users\kerne\Desktop\Top Choice Orders Service\TopChoiceHardware.OrdersService\TopChoiceHardware.OrdersService.AccessData\obj\Debug\net5.0\TopChoiceHardware.OrdersService.AccessData.csproj.AssemblyReference.cache
+C:\Users\kerne\Desktop\Top Choice Orders Service\TopChoiceHardware.OrdersService\TopChoiceHardware.OrdersService.AccessData\obj\Debug\net5.0\TopChoiceHardware.OrdersService.AccessData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kerne\Desktop\Top Choice Orders Service\TopChoiceHardware.OrdersService\TopChoiceHardware.OrdersService.AccessData\obj\Debug\net5.0\TopChoiceHardware.OrdersService.AccessData.AssemblyInfoInputs.cache
+C:\Users\kerne\Desktop\Top Choice Orders Service\TopChoiceHardware.OrdersService\TopChoiceHardware.OrdersService.AccessData\obj\Debug\net5.0\TopChoiceHardware.OrdersService.AccessData.AssemblyInfo.cs
+C:\Users\kerne\Desktop\Top Choice Orders Service\TopChoiceHardware.OrdersService\TopChoiceHardware.OrdersService.AccessData\obj\Debug\net5.0\TopChoiceHardware.OrdersService.AccessData.csproj.CoreCompileInputs.cache
+C:\Users\kerne\Desktop\Top Choice Orders Service\TopChoiceHardware.OrdersService\TopChoiceHardware.OrdersService.AccessData\obj\Debug\net5.0\TopChoiceHardware.OrdersService.AccessData.csproj.CopyComplete
+C:\Users\kerne\Desktop\Top Choice Orders Service\TopChoiceHardware.OrdersService\TopChoiceHardware.OrdersService.AccessData\obj\Debug\net5.0\TopChoiceHardware.OrdersService.AccessData.dll
+C:\Users\kerne\Desktop\Top Choice Orders Service\TopChoiceHardware.OrdersService\TopChoiceHardware.OrdersService.AccessData\obj\Debug\net5.0\ref\TopChoiceHardware.OrdersService.AccessData.dll
+C:\Users\kerne\Desktop\Top Choice Orders Service\TopChoiceHardware.OrdersService\TopChoiceHardware.OrdersService.AccessData\obj\Debug\net5.0\TopChoiceHardware.OrdersService.AccessData.pdb
+C:\Users\kerne\Desktop\Top Choice Orders Service\TopChoiceHardware.OrdersService\TopChoiceHardware.OrdersService.AccessData\obj\Debug\net5.0\TopChoiceHardware.OrdersService.AccessData.genruntimeconfig.cache
